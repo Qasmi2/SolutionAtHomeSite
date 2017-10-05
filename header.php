@@ -1,18 +1,18 @@
 <!Doctype html>
-<html lang="en">
+<html <?php language_attributes();?>>
     <head>
-        <meta charset="utf-8">
+        <meta charset="<?php bloginfo('charset');?>">
         <meta name="viewpoint" content="width=device-width" initial-scale="1.0">
             
         <title>
-            Ayan Shani
+            <?php bloginfo('name');?>
         </title>
-        <!--  adding stylesheet -->
+        <!--  adding style-Sheet -->
         <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet"/>
            
         <?php wp_head(); ?>
     </head>
     
     <body>
-        
-    
+        <!-- Menu bar show on front page -->
+    <?php wp_nav_menu(array('theme_location'=>'primary')); ?>

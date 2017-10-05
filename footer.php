@@ -1,7 +1,11 @@
-<footer>
-    <h4>
-        footer part 
-    </h4>
+<footer class="footer">
+    
+        
+        <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
+    <p>
+        <?php bloginfo('name');?>-&COPY;<?php echo date('Y');?>
+    </p>
+    
 </footer>
 
 
